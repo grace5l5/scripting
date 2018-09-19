@@ -8,23 +8,23 @@ bottom = open('templates/bottom.html').read()
 complete = template.safe_substitute(title='Grace Leung Shing')
 index = open('content/index.html').read() 
 total = complete + index + bottom 
-open('new/index.html', 'w+').write(total)
+open('docs/index.html', 'w+').write(total)
 
 # contact
 complete = template.safe_substitute(title='Contact Grace')
 contact = open('content/contact.html').read() 
 total = complete + contact + bottom 
-open('new/contact.html', 'w+').write(total)
+open('docs/contact.html', 'w+').write(total)
 
 # blogs
 complete = template.safe_substitute(title='Blogs')
 blogs = open('content/blogs.html').read() 
 total = complete + blogs + bottom 
-open('new/blogs.html', 'w+').write(total)
+open('docs/blogs.html', 'w+').write(total)
 
 # projects
 complete = template.safe_substitute(title='Projects')
 projects = open('content/projects.html').read() 
 total = complete + projects + bottom 
-open('new/projects.html', 'w+').write(total)
+open('docs/projects.html', 'w+').write(total)
 
